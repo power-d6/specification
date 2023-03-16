@@ -9,6 +9,7 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 
 ### Added 
 
+- Detail how to create modules from directories
 - Started to document decisions with ADRs
 - Add glossary for the documentation and project
 - Document modules with json-schema

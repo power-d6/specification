@@ -20,14 +20,8 @@
     "rendering": {
       "description": "The rendering code for all the supported formats.",
       "type": "object",
-      "properties": {
-        "format": {
-          "description": "The identifier for the file format",
-          "type": "string",
-          "minLength": 2,
-          "maxLength": 4
-        },
-        "template": {
+      "patternProperties": {
+        "^[a-zA-Z0-9-_]{2,3}$": {
           "description": "The template to be used for the specified format",
           "type": "string"
         }

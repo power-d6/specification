@@ -5,6 +5,7 @@
 
 # User guide
 
+- [Creating Modules](creating-modules.md)
 - [Combining Modules](combining-modules.md)
 
 ---
