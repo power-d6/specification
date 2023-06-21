@@ -1,40 +1,10 @@
 name: Validate PR
-
 on:
   pull_request:
-    types:
-      - "opened"
-      - "reopened"
-      - "synchronize"
-      - "labeled"
-      - "unlabeled"
-
 concurrency:
   group: ${{ github.workflow }}-${{ github.ref }}
   cancel-in-progress: true
-
 jobs:
   check-changelog:
-    uses: powerd6/.github/.github/workflows/check-changelog.yml@main
+    uses: powerd6/.github/.github/workflows/mdbook-ci.yml@main
     secrets: inherit
-  build:
-    runs-on: ubuntu-latest
-    steps:
-      - uses: actions/checkout@v3.3.0
-      - uses: actions/cache@v3
-        with:
-          path: |
-            ~/.cargo/bin/
-            ~/.cargo/registry/index/
-            ~/.cargo/registry/cache/
-            ~/.cargo/git/db/
-            target/
-          key: ${{ runner.os }}-cargo-${{ hashFiles('**/Cargo.lock') }}
-      - name: Install mdbook
-        run: |-
-          cargo install mdbook || true
-          cargo install mdbook-toc || true
-          cargo install mdbook-linkcheck || true
-      - name: Build mdbook
-        run: |-
-          mdbook build
