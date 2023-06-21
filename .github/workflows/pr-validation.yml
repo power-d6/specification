@@ -5,6 +5,6 @@ concurrency:
   group: ${{ github.workflow }}-${{ github.ref }}
   cancel-in-progress: true
 jobs:
-  check-changelog:
+  build:
     uses: powerd6/.github/.github/workflows/mdbook-ci.yml@main
     secrets: inherit
