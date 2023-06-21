@@ -1,0 +1,18 @@
+{
+    "$schema": "https://json-schema.org/draft/2020-12/schema",
+    "$id": "https://specification.powerd6.org/schemas/conetnt.json",
+    "title": "content",
+    "type": "object",
+    "description": "A piece of content that contains all the information, following a specified type.",
+    "properties": {
+        "type": {
+            "description": "The id of the type that this content corresponds to",
+            "type": "string",
+            "pattern": "^[a-zA-Z0-9-_]+$"
+        }
+    },
+    "required": [
+        "type"
+    ],
+    "additionalProperties": true
+}

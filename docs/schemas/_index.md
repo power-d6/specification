@@ -23,3 +23,13 @@
 ```json
 {{#include type.example.json}}
 ```
+
+## Content
+
+**Download:** [json-schema file](./content.json)
+
+**Example:**
+
+```json
+{{#include content.example.json}}
+```

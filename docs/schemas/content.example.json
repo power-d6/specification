@@ -1,0 +1,6 @@
+{
+    "type": "spell",
+    "name": "Fireball",
+    "recovery": 2,
+    "effect": "Create an orb of flames that can be thrown with magical energy."
+}

@@ -32,23 +32,7 @@
       "type": "object",
       "patternProperties": {
         "^[a-zA-Z0-9-_]+$": {
-          "type": "object",
-          "properties": {
-            "id": {
-              "description": "The unique identifier of the content piece.",
-              "type": "string",
-              "pattern": "^[a-zA-Z0-9-_]+$"
-            },
-            "type": {
-              "description": "The unique identifier of the content type.",
-              "type": "string",
-              "pattern": "^[a-zA-Z0-9-_]+$"
-            }
-          },
-          "additionalProperties": true,
-          "required": [
-            "type"
-          ]
+          "$ref": "https://specification.powerd6.org/schemas/content.json"
         }
       }
     }
