@@ -33,3 +33,9 @@ This structure allows for content pieces to cross-reference each-other, for exam
 {{/with}}
 {{/each}}
 ```
+
+## Helpers
+
+To help some specific use-cases, custom helpers have been added to the rendering engine.
+
+{{#include rendering-helpers/splitLines.md}}
