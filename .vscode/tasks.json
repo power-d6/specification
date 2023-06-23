@@ -18,6 +18,20 @@
             "type": "shell",
             "command": "mdbook serve",
             "problemMatcher": []
+        },
+        {
+            "label": "Create ADR",
+            "type": "shell",
+            "command": "adr new ${input:adrTitle}",
+            "problemMatcher": []
+        }
+    ],
+    "inputs": [
+        {
+            "id": "adrTitle",
+            "description": "The title of the ADR to be created",
+            "default": "My ADR title",
+            "type": "promptString"
         }
     ]
 }
