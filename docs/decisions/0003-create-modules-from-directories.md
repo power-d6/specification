@@ -1,4 +1,4 @@
-# 3. create modules from directories
+# 3. Create modules from directories
 
 Date: 2023-02-25
 

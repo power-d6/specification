@@ -1,5 +1,3 @@
 # Decision Records
 
-{{#include 0001-record-architecture-decisions.md}}
-{{#include 0002-merge-json-modules.md}}
-{{#include 0003-create-modules-from-directories.md}}
+Decision records are documents that capture the information that was taken into account and the considerations that were made whe taking a decision that impacts the multiple aspects of the project.
