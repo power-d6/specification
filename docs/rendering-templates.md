@@ -1,4 +1,4 @@
-# Writing templates
+# Rendering Templates
 
 When defining a type, it is important to also define how to render it into the screen.
 

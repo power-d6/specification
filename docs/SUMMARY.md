@@ -6,7 +6,7 @@
 # User guide
 
 - [Creating Modules](creating-modules.md)
-  - [Writing Templates](writing-templates.md)
+  - [Rendering Templates](writing-rendering-templates.md)
 - [Combining Modules](combining-modules.md)
 
 ---
