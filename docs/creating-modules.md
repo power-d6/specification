@@ -36,6 +36,8 @@ my_module/
 │       ├── _.json
 │       ├── description.md
 │       └── schema.json
+│       └── rendering/
+│           └── md.txt
 └── contents/
     ├── spells/
     │   ├── fireball.json
@@ -56,7 +58,11 @@ my_module/
     "types": {
         "spells": {},
         "items": {},
-        "attributes": {}
+        "attributes": {
+            "rendering": {
+                "md": "..."
+            }
+        }
     },
     "contents": {
         "spells_fireball": {},
