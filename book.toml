@@ -10,8 +10,10 @@ src = "docs"
 
 [preprocessor.toc]
 command = "mdbook-toc"
-
 renderer = ["html"]
+
+[preprocessor.footnote]
+
 
 [output.html]
 git-repository-url = "https://github.com/powerd6/specification"

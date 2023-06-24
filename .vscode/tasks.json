@@ -4,7 +4,7 @@
         {
             "label": "Install",
             "type": "shell",
-            "command": "cargo install mdbook && cargo install mdbook-toc && cargo install mdbook-linkcheck",
+            "command": "cargo install mdbook mdbook-toc mdbook-linkcheck mdbook-footnote",
             "problemMatcher": []
         },
         {

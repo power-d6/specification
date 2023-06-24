@@ -38,4 +38,6 @@ This structure allows for content pieces to cross-reference each-other, for exam
 
 To help some specific use-cases, custom helpers have been added to the rendering engine.
 
+These helpers were created to simplify the creation of complex rendering templates. If your templates are too complex, consider sharing them with the community so an appropriate helper can be created!
+
 {{#include rendering-helpers/splitLines.md}}
