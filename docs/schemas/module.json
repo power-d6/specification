@@ -6,7 +6,7 @@
   "description": "A document that contains information detailing and explaining rules and/or content, meant to be used for rendering by powerd6.",
   "properties": {
     "title": {
-      "description": "The title of the module",
+      "description": "The title of the module.",
       "type": "string"
     },
     "description": {
@@ -19,7 +19,7 @@
       "format": "uri"
     },
     "types": {
-      "description": "A collection of types that are defined in this module",
+      "description": "A collection of types that are defined in this module.",
       "type": "object",
       "patternProperties": {
         "^[a-zA-Z0-9-_]+$": {
@@ -28,7 +28,7 @@
       }
     },
     "content": {
-      "description": "A collection of contents defined in this module, the keys of the map are the unique identifiers of the content pieces",
+      "description": "A collection of contents defined in this module, the keys of the map are the unique identifiers of the content pieces.",
       "type": "object",
       "patternProperties": {
         "^[a-zA-Z0-9-_]+$": {

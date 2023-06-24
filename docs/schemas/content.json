@@ -6,7 +6,7 @@
     "description": "A piece of content that contains all the information, following a specified type.",
     "properties": {
         "type": {
-            "description": "The id of the type that this content corresponds to",
+            "description": "The id of the type that this content corresponds to.",
             "type": "string",
             "pattern": "^[a-zA-Z0-9-_]+$"
         }
