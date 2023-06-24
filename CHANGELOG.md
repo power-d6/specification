@@ -14,3 +14,4 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 - Add glossary for the documentation and project
 - Document modules with json-schema
 - Use [mdbook](https://rust-lang.github.io/mdBook/) to publish documentation as a website
+- Document how to use rendering templates
