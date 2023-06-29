@@ -11,3 +11,7 @@ See [the powerd6 Code of Conduct](https://github.com/powerd6/.github/blob/main/C
 ## Contributing
 
 See [the powerd6 Contributing guidelines](https://github.com/powerd6/.github/blob/main/CONTRIBUTING.md).
+
+## License
+
+See [the powerd6 License](https://github.com/powerd6/.github/blob/main/LICENSE.md).
