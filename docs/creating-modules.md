@@ -3,20 +3,27 @@
 While it is definitely possible to create modules by hand,
 the structure of the contents can be hard to manage and change over time.
 
-However, there is an easier way to create complex modules: using directories and the [`powerd6_cli`](https://github.com/powerd6/tools) tool.
+However, there is an easier way to create complex modules: using directories and the [`powerd6_cli`](https://github.com/powerd6/tools) tool. The [core rules](https://github.com/powerd6/core-rules) are a good example of this being used.
 
 ## Directory Structure
 
 The tool can run against any directory and works in the following manner:
 
-1. A file named `module` (regardless of extension) or all files inside the `module` directory will be used to fill the basic metadata (title, source, description) of the module.
-   1. The module metadata can optionally contain types and contents definitions
-2. The files inside the `types` and `content` directories will be mapped accordingly, with the following rules:
-   1. If a file named `_` (regardless of extension) exists:
-      - All files in that directory will be used to fill the metadata of a single entry;
-      - Otherwise, each file in the directory will be mapped to their own entry.
-   2. Directories contained within the current directory will be mapped under the same rules as the basic directory.
-      1. The `rendering` directory is treated differently when inside the `types` directory.
+### Module metadata
+
+The file named `module` (regardless of extension) or the files inside the directory `module` fill the basic metadata (title, source, description) of the module.
+
+The module metadata can also optionally contain types and contents definitions, but this is **not** recommended.
+
+### Types and Content
+
+The files inside the `types` and `contents` directories will be mapped accordingly, with the following rules:
+
+If a file named `_` (regardless of extension) exists, then all files in that directory will be used to fill the metadata of a single entry. Otherwise, each file in the directory will be mapped to their own entry.
+
+Other sub-directories contained within the current directory are mapped under the same rules. The one exception is the `rendering` subdirectory, where it's files will be added to the parent entry.
+
+For each created entry, their identifier is an underscore (`_`) separated list of the folder and file names between the first directory (`types` or `contents`) and the entry.
 
 ### Examples
 
@@ -53,8 +60,10 @@ my_module/
     "source": "",
     "types": {
         "attributes": {
+            "description": "",
+            "schema": {},
             "rendering": {
-                "md": "..."
+                "md": ""
             }
         },
         "items": {},
