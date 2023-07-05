@@ -14,6 +14,7 @@
   - [Merge JSON modules](decisions/0002-merge-json-modules.md)
   - [Create modules from directories](decisions/0003-create-modules-from-directories.md)
   - [Ordered module contents](decisions/0004-ordered-module-contents.md)
+  - [Switch rendering template](decisions/0005-switch-rendering-template.md)
 
 # Reference
 
