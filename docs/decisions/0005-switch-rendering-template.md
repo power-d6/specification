@@ -22,9 +22,9 @@ The following template languages (and their implementing libraries) are under co
 - Liquid:
   - [liquid](https://crates.io/crates/liquid)
 
-### Tests
+### Options
 
-To validate the viability of each library, some tests will be performed.
+To validate the viability of each library, let's explore how to implement the same template in the three languages.
 
 All test will have the same input data structure:
 
@@ -75,8 +75,8 @@ All test will have the same input data structure:
 # {{data.name}}
 
 {%- for related in data.related %}
-## [{{other.contents[related[0]].name}}](/{{related[0]}})
-{{related[1].relationship}}
+## [{{other.contents[related].name}}](/{{related}})
+{{data.related[related].relationship}}
 {%- endfor %}
 ```
 
@@ -86,8 +86,8 @@ All test will have the same input data structure:
 # {{data.name}}
 
 {%- for related in data.related %}
-## [{{other.contents[related].name}}](/{{related}})
-{{data.related[related].relationship}}
+## [{{other.contents[related[0]].name}}](/{{related[0]}})
+{{related[1].relationship}}
 {%- endfor %}
 ```
 
