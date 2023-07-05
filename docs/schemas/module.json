@@ -27,7 +27,7 @@
         }
       }
     },
-    "content": {
+    "contents": {
       "description": "A collection of contents defined in this module, the keys of the map are the unique identifiers of the content pieces.",
       "type": "object",
       "patternProperties": {

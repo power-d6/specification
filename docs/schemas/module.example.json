@@ -32,7 +32,7 @@
             }
         }
     },
-    "content": {
+    "contents": {
         "fireball": {
             "type": "spell",
             "name": "Fireball",
