@@ -71,7 +71,7 @@ All test will have the same input data structure:
 
 #### Jinja2
 
-```jinja2
+```jinja
 # {{data.name}}
 
 {%- for related in data.related %}
