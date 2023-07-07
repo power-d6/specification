@@ -1,6 +1,6 @@
 {
     "$schema": "https://json-schema.org/draft/2020-12/schema",
-    "$id": "https://specification.powerd6.org/schemas/conetnt.json",
+    "$id": "https://specification.powerd6.org/schemas/content.json",
     "title": "content",
     "type": "object",
     "description": "A piece of content that contains all the information, following a specified type.",
