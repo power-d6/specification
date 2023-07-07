@@ -1,5 +1,4 @@
 {
-    "id": "spell",
     "description": "Arcane or mystical arts that can be used inside or outside combat.",
     "schema": {
         "properties": {
