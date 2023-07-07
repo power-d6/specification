@@ -18,6 +18,12 @@
 
 **Download:** [json-schema file](./type.json)
 
+> ❗️ **Gotcha**: When defining custom schemas for your types, make sure to not disallow additional properties.
+> 
+> This is required for the validator to property combine the [base content schema](#content) with your custom schema correctly.
+>
+> This is a limitation of JSON Schema, a more detailed explanation is available [here](https://json-schema.org/understanding-json-schema/reference/object.html?highlight=additionalproperties#unevaluated-properties).
+
 **Example:**
 
 ```json
